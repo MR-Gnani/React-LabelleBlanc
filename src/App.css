@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@font-face {
+  font-family: 'TAEBAEKmilkyway';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .parisienne-regular {
   font-family: "Parisienne", cursive;
@@ -78,6 +84,7 @@
   margin-top: 0;
   display: flex;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .menuList li {
@@ -96,7 +103,7 @@
 }
 
 .loginBox {
-  width: 30%;
+  width: 400px;
   height: 60%;
   color:rgb(80, 52, 31);
 }
@@ -114,6 +121,26 @@
   border: none;
   background-color: #F8F8F8;
 }
+
+.signUp {
+  height: 10%;
+  padding: 0 10px;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(113, 74, 43);
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif; /* 기본 폰트로 설정 */
+  cursor: pointer;
+}
+
+.submitInput {
+  cursor: pointer;
+}
+
 .loginForm input[type=submit] {
   background-color: rgb(113, 74, 43);
   color: white;
@@ -145,6 +172,7 @@
   margin: 1em;
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 
 .productCardsWrap {
@@ -156,6 +184,7 @@
 .cardBox {
   width: 100%;
   aspect-ratio: 1 / 1.5;
+  cursor: pointer;
 }
 .imgWrap {
   position: relative;
@@ -185,7 +214,7 @@
 }
 
 .contentsCard {
-  padding-left: 8px;
+  padding-left: 4px;
   padding-right: 8px;
 }
 
@@ -193,9 +222,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+.itemTitle {
+  font-family: 'TAEBAEKmilkyway';
+}
 /* 미디어 쿼리를 사용하여 모바일 장치에 대한 스타일을 설정합니다. */
 @media only screen and (max-width: 768px) {
   /* 768px보다 작은 너비를 가진 장치에 대한 스타일을 여기에 추가합니다. */
+
+  .loginBox {
+    width: 300px;
+  }
+
   .title {
     font-size: 50px;
     color:rgb(80, 52, 31);

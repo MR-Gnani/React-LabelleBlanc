@@ -3,9 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({authenticate, setAuthenticate}) => {
     const menuList = ["Ballet","Outer","Top","Bottom","Event"]
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    console.log(authenticate);
+
+    const logout = ()=>{
+        navigate('/')
+        setAuthenticate(false);
+    }
 
     const goToLoginPage = ()=>{
         navigate('/login');
@@ -23,9 +29,9 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faSearch}/>
             </div>
             <div className='buttonArea'>
-                <div className='login-button' onClick={goToLoginPage}>Login</div>
+                <div className='login-button' onClick={authenticate? logout : goToLoginPage}>{authenticate ? 'Logout' : 'Login'}</div>
                 <div className='login-button'>About us</div>
-                <div className='login-button'>Mypage</div>
+                <div className='login-button'>My Page</div>
                 <div className='login-button'>Cart</div>
             </div>
         </div>
