@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../component/ProductCard';
 
-const ProductAll = ({isLiked, setIsLiked}) => {
+const ProductAll = () => {
 
   const[productList, setProductList] = useState([]);
   

@@ -35,9 +35,9 @@ const Signup = () => {
           <input type="submit" value="Sign Up" className='submitInput'/>
           <div className='signUp' onClick={goToLoginPage}>아이디가 있으신가요? Login Page </div>
           <div className='logo'>
-            <img className="logoSize" src={nLogo} alt="im"/>
-            <img className="logoSize" src={kLogo} alt="im"/>
-            <img className="logoSize" src={gLogo} alt="im"/>
+            <img className="logoSize" src={nLogo} alt=""/>
+            <img className="logoSize" src={kLogo} alt=""/>
+            <img className="logoSize" src={gLogo} alt=""/>
           </div>
           <span>소셜 회원가입</span>
         </form>

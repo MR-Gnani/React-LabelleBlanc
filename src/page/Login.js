@@ -31,9 +31,9 @@ const Login = ({setAuthenticate}) => {
           <input type="submit" value="Login" className='submitInput'/>
           <div className='signUp' onClick={signUp}>Sign Up</div>
           <div className='logo'>
-            <img className="logoSize" src={nLogo} alt="im"/>
-            <img className="logoSize" src={kLogo} alt="im"/>
-            <img className="logoSize" src={gLogo} alt="im"/>
+            <img className="logoSize" src={nLogo} alt=""/>
+            <img className="logoSize" src={kLogo} alt=""/>
+            <img className="logoSize" src={gLogo} alt=""/>
           </div>
           <span>소셜 로그인</span>
         </form>
