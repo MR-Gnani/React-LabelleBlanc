@@ -20,6 +20,9 @@ const ProductAll = () => {
   return (
     <div className='productCardsWrap'>
       <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
     </div>
   )
 }

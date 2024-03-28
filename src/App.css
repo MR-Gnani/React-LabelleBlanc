@@ -49,6 +49,10 @@
   color: rgb(80, 52, 31); /* 아이콘 색상 설정 */
 }
 
+.buttonArea {
+  display: flex;
+}
+
 .titleWrap {
   display: flex;
   justify-content: center;
@@ -69,6 +73,7 @@
 }
 
 .menuList {
+  margin-top: 0;
   display: flex;
   list-style-type: none;
 }
@@ -85,11 +90,91 @@
 
 .cardBox {
   width: 100%;
-  height: 500px;
+  aspect-ratio: 1 / 1.5;
   overflow: hidden;
+}
+.imgWrap {
+  position: relative;
+  width: 100%;
+}
+.faHeart {
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 3%;
+  right: 0.1em;
+  color: white;
+  z-index: 1;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .cardBox img {
   width: 100%;
-  height: 80%;
+  aspect-ratio: 1 / 1.1618;
+}
+
+.contentsCard {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.contentsTitle {
+  display: flex;
+  justify-content: space-between;
+}
+/* 미디어 쿼리를 사용하여 모바일 장치에 대한 스타일을 설정합니다. */
+@media only screen and (max-width: 768px) {
+  /* 768px보다 작은 너비를 가진 장치에 대한 스타일을 여기에 추가합니다. */
+  .title {
+    font-size: 50px;
+    color:rgb(80, 52, 31);
+  }
+  
+  .productCardsWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .cardBox {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .cardBox img {
+    width: 100%;
+    aspect-ratio: 1 / 1.1618;
+  }
+
+  .faHeart {
+    right: 0.03em;
+  }
+
+}
+
+/* 미디어 쿼리를 사용하여 태블릿 장치에 대한 스타일을 설정합니다. */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 769px부터 1024px까지의 너비를 가진 장치에 대한 스타일을 여기에 추가합니다. */
+  .title {
+    font-size: 60px;
+    color:rgb(80, 52, 31);
+  }
+  
+  .productCardsWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+  }
+  .cardBox {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .cardBox img {
+    width: 100%;
+    aspect-ratio: 1 / 1.1618;
+  }
 }
