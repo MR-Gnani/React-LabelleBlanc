@@ -12,7 +12,7 @@ const ProductCard = ({item}) => {
 
     const[isLiked, setIsLiked] = useState(false);
 
-    const handleLikeClik = (e)=>{
+    const handleLikeClick = (e)=>{
         e.stopPropagation(); // 이벤트 버블링 방지
         setIsLiked(!isLiked);
     }
@@ -20,8 +20,8 @@ const ProductCard = ({item}) => {
   return (
     <div className='cardBox' onClick={showDetail}>
         <div className='imgWrap'>
-            <img src={item?.img}/>
-            <button className='faHeart' onClick={handleLikeClik}>
+            <img src={item?.img} alt=''/>
+            <button className='faHeart' onClick={handleLikeClick}>
                 <FontAwesomeIcon icon={isLiked? faSolidHeart : faHeart} color={isLiked ? 'red' : 'white'}/>
             </button>
         </div>
