@@ -18,12 +18,14 @@ const ProductAll = () => {
   },[])
 
   return (
-    <div className='productCardsWrap'>
-      <ProductCard/>
-      <ProductCard/>
-      <ProductCard/>
-      <ProductCard/>
+    <div className='bodyContainer'>
+      <div className='productCardsWrap'>
+        {productList.map((item)=> (
+          <ProductCard item={item}/>
+        ))}
+      </div>
     </div>
+    
   )
 }
 

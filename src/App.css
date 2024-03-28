@@ -22,6 +22,7 @@
   display: flex;
   justify-content: right;
   padding: 1em;
+  cursor: pointer;
 }
 
 .searchInput {
@@ -59,6 +60,7 @@
 }
 
 .title {
+  cursor: pointer;
   font-size: 80px;
   color:rgb(80, 52, 31);
 }
@@ -82,6 +84,69 @@
   padding: 10px;
 }
 
+.bodyContainer{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginBox {
+  width: 30%;
+  height: 60%;
+  color:rgb(80, 52, 31);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.loginForm input {
+  height: 10%;
+  padding: 0 10px;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  border: none;
+  background-color: #F8F8F8;
+}
+.loginForm input[type=submit] {
+  background-color: rgb(113, 74, 43);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.loginForm input[type=checkbox]{
+  width: 12px;
+  height: 12px;
+}
+
+.loginForm input[type=checkbox]:checked{
+  width: 12px;
+  height: 12px;
+  accent-color: rgb(113, 74, 43);
+}
+
+.loginForm span {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logoSize {
+  margin: 1em;
+  height: 50px;
+  width: 50px;
+}
+
 .productCardsWrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -91,7 +156,6 @@
 .cardBox {
   width: 100%;
   aspect-ratio: 1 / 1.5;
-  overflow: hidden;
 }
 .imgWrap {
   position: relative;
@@ -113,6 +177,11 @@
 .cardBox img {
   width: 100%;
   aspect-ratio: 1 / 1.1618;
+  transition: transform 0.3s ease; 
+}
+
+.cardBox:hover img {
+  transform: scale(1.1, 1.1);
 }
 
 .contentsCard {
@@ -131,6 +200,12 @@
     font-size: 50px;
     color:rgb(80, 52, 31);
   }
+
+  .bodyContainer{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
   
   .productCardsWrap {
     display: grid;

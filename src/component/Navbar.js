@@ -1,9 +1,19 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
+
 const Navbar = () => {
     const menuList = ["Ballet","Outer","Top","Bottom","Event"]
+    const navigate = useNavigate()
+
+    const goToLoginPage = ()=>{
+        navigate('/login');
+    }
+
+    const goToHomePage = ()=>{
+        navigate('/')
+    }
     
   return (
     <div>
@@ -13,16 +23,14 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faSearch}/>
             </div>
             <div className='buttonArea'>
-                <div className='login-button'>Login</div>
+                <div className='login-button' onClick={goToLoginPage}>Login</div>
                 <div className='login-button'>About us</div>
                 <div className='login-button'>Mypage</div>
                 <div className='login-button'>Cart</div>
             </div>
-            
-
         </div>
         <div className='titleWrap'>
-            <div className='title'>Labelle Blanc</div>
+            <div className='title' onClick={goToHomePage}>Labelle Blanc</div>
         </div>
         <div className='menuWrap'>
             <ul className='menuList'>

@@ -2,8 +2,8 @@
     "products":[
         {
             "id":0,
-            "img":"https://noona-hnm.netlify.app/pattern-jacket.jpeg",
-            "title":"벨티드 트윌 코트",
+            "img":"https://labelleblanc.com/web/product/big/202310/67cf0769b9e5b53547e0378c35d22ef5.jpg",
+            "title":"Guyenne Blouse",
             "price":99900,
             "choice":true,
             "new":true,
@@ -12,7 +12,7 @@
         },
         {
             "id":1,
-            "img":"https://noona-hnm.netlify.app/ankle-jeans.jpeg",
+            "img":"https://labelleblanc.com/web/product/big/202212/c43aa828a0e17e675a5904a0eebb89f5.jpg",
             "title":"슬림핏 맘 하이웨이스트 앵클 진",
             "price":29900,
             "choice":true,
@@ -22,7 +22,7 @@
         },
         {
             "id":2,
-            "img":"https://noona-hnm.netlify.app/wide-jeans.jpeg",
+            "img":"https://labelleblanc.com/web/product/big/202210/3571efd2096125de385ec6c88a4f14de.jpg",
             "title":"와이드 하이웨이스트 진",
             "price":39900,
             "choice":false,
