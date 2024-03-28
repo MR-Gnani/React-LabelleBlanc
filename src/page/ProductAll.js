@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../component/ProductCard';
 
-const ProductAll = () => {
+const ProductAll = ({isLiked, setIsLiked}) => {
 
   const[productList, setProductList] = useState([]);
-
+  
   const getProducts = async()=>{
     let url = `http://localhost:5000/products`;
     let response = await fetch(url);
@@ -14,7 +14,7 @@ const ProductAll = () => {
   }
 
   useEffect(()=>{
-    getProducts()
+    getProducts();
   },[])
 
   return (

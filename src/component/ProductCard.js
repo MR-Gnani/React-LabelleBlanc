@@ -9,7 +9,9 @@ const ProductCard = ({item}) => {
     const showDetail = ()=>{
         navigate(`/product/${item?.id}`);
     }
-    const [isLiked, setIsLiked] = useState(false);
+
+    const[isLiked, setIsLiked] = useState(false);
+
     const handleLikeClik = (e)=>{
         e.stopPropagation(); // 이벤트 버블링 방지
         setIsLiked(!isLiked);

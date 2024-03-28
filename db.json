@@ -7,7 +7,8 @@
             "price":"109,000",
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -17,7 +18,8 @@
             "price":"154,000",
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -27,7 +29,8 @@
             "price":"68,000",
             "choice":false,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -37,7 +40,8 @@
             "price":"57,000",
             "choice":false,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -47,7 +51,8 @@
             "price":"118,000",
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -57,7 +62,8 @@
             "price":"38,000",
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -67,7 +73,8 @@
             "price":"158,000",
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -77,7 +84,8 @@
             "price":"107,000",
             "choice":false,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -87,7 +95,8 @@
             "price":"129,000",
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -97,7 +106,8 @@
             "price":"390,000",
             "choice":false,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -107,7 +117,8 @@
             "price":"180,000",
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -117,7 +128,8 @@
             "price":"38,000",
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -127,7 +139,8 @@
             "price":"96,000",
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         },
         {
@@ -137,7 +150,8 @@
             "price":"103,000",
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "isLiked":false
 
         }
     ]
