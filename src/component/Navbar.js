@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = ({authenticate, setAuthenticate}) => {
-    const menuList = ["Ballet","Outer","Top","Bottom","Event"]
+    const menuList = ["ballet","outer","top","bottom","event"]
     const navigate = useNavigate();
 
     const logout = ()=>{
@@ -32,6 +32,13 @@ const Navbar = ({authenticate, setAuthenticate}) => {
         if (e.key === 'Enter') {
             navigate(`/?q=${inputValue}`);
         }
+        setWidth(0); // 사이드 메뉴 숨기기
+    }
+
+    const category = (menu)=>{
+        console.log("ㅇㅇㅇ");
+        navigate(`/?q=${menu}`);
+        setWidth(0); // 사이드 메뉴 숨기기
     }
 
     const showSideMenu = ()=>{
@@ -39,7 +46,7 @@ const Navbar = ({authenticate, setAuthenticate}) => {
     }
     let [width, setWidth] = useState(0);
     
-    const hideSideMenu = (e) => {
+    const hideSideMenu = () => {
           setWidth(0); // 사이드 메뉴 숨기기
       }
     
@@ -60,7 +67,7 @@ const Navbar = ({authenticate, setAuthenticate}) => {
             <div className='unVisible'>Category</div>
             <div className='menuWrap'>
                 <ul className='menuList category'>
-                    {menuList.map(menu=><li>{menu}</li>)}
+                    {menuList.map(menu=><li key={menu} onClick={()=>category(menu)}>{menu}</li>)}
                 </ul>
             </div>
         </div>
@@ -83,7 +90,7 @@ const Navbar = ({authenticate, setAuthenticate}) => {
         </div>
         <div className='menuWrap'>
             <ul className='menuList'>
-                {menuList.map(menu=><li>{menu}</li>)}
+                {menuList.map(menu=><li key={menu} onClick={()=>category(menu)}>{menu}</li>)}
             </ul>
         </div>
     </div>

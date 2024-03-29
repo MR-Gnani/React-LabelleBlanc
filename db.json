@@ -45,7 +45,7 @@
             "new":true,
             "size":["S","M","L"],
             "isLiked":"",
-            "category":"bottom"
+            "category":"ballet"
 
         },
         {
@@ -166,6 +166,102 @@
             "size":["S","M","L"],
             "isLiked":"",
             "category":"top"
+
+        },
+        {
+            "id":14,
+            "img":"https://labelleblanc.com/web/product/big/202310/5eccaed089ff9203937afd0b102a7afa.jpg",
+            "title":"끌레어 부츠 베이지",
+            "price":"376,000",
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"acc"
+
+        },
+        {
+            "id":15,
+            "img":"https://labelleblanc.com/web/product/big/202210/92126c02f78704269320dd7dd8924a7b.jpg",
+            "title":"끌레어 부츠",
+            "price":"376,000",
+            "choice":true,
+            "new":false,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"acc"
+
+        },
+        {
+            "id":16,
+            "img":"https://labelleblanc.com/web/product/big/202401/64a7a80a3392de51287d73cf8b2ecd5b.gif",
+            "title":"델리카 모이사나이트 목걸이",
+            "price":"380,000",
+            "choice":true,
+            "new":true,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"acc"
+
+        },
+        {
+            "id":17,
+            "img":"https://labelleblanc.com/web/product/big/202207/f541be16acf62960fde28f746d212b34.jpg",
+            "title":"누아 퍼프 레오타드",
+            "price":"83,000",
+            "choice":true,
+            "new":true,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"ballet"
+
+        },
+        {
+            "id":18,
+            "img":"https://labelleblanc.com/web/product/big/202310/454855011d37552adf6924a9c060b672.jpg",
+            "title":"헤이즐넛 버클 스커트",
+            "price":"102,000",
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"bottom"
+
+        },
+        {
+            "id":19,
+            "img":"https://labelleblanc.com/web/product/big/202307/790f98aca521cc0a7ea8f0af2e42c9ae.jpg",
+            "title":"다이애나 원피스",
+            "price":"219,000",
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"dress"
+
+        },
+        {
+            "id":20,
+            "img":"https://labelleblanc.com/web/product/big/202401/c5c688474ae72113d9fe4bd4e6446e4a.jpg",
+            "title":"세이블 램스린 자켓",
+            "price":"288,000",
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"outer"
+
+        },
+        {
+            "id":21,
+            "img":"https://labelleblanc.com/web/product/big/202401/6d1347fd2ffaeb62e96de151b45f29b6.jpg",
+            "title":"안나 부클 자켓",
+            "price":"298,000",
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "isLiked":"",
+            "category":"outer"
 
         }
     ]
