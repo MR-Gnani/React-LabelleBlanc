@@ -8,7 +8,8 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"top"
 
         },
         {
@@ -19,7 +20,8 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"top"
 
         },
         {
@@ -30,7 +32,8 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"ballet"
 
         },
         {
@@ -41,7 +44,8 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"bottom"
 
         },
         {
@@ -52,7 +56,8 @@
             "choice":true,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"ballet"
 
         },
         {
@@ -63,7 +68,8 @@
             "choice":false,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"bottom"
 
         },
         {
@@ -74,7 +80,8 @@
             "choice":true,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"dress"
 
         },
         {
@@ -85,7 +92,8 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"bottom"
 
         },
         {
@@ -96,7 +104,8 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"top"
 
         },
         {
@@ -107,7 +116,8 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"outer"
 
         },
         {
@@ -118,7 +128,8 @@
             "choice":true,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"dress"
 
         },
         {
@@ -129,7 +140,8 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"acc"
 
         },
         {
@@ -140,7 +152,8 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"bottom"
 
         },
         {
@@ -151,7 +164,8 @@
             "choice":false,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":""
+            "isLiked":"",
+            "category":"top"
 
         }
     ]

@@ -349,7 +349,10 @@
     font-size: 40px;
     padding-left: 1em;
     color: rgb(45, 29, 18);
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgba(255, 255, 255, 0.703);
+    
   }
 
   .closeBtn {
@@ -396,6 +399,7 @@
     display: inline;
     width: 20%;
     cursor: pointer;
+    margin-right: 5px;
   }
 
   .searchInput {

@@ -9,23 +9,26 @@ const Navbar = ({authenticate, setAuthenticate}) => {
     const logout = ()=>{
         navigate('/')
         setAuthenticate(false);
+        setWidth(0); // 사이드 메뉴 숨기기
     }
 
     const goToLikePage = ()=>{
-        navigate('/favorite/:id')
+        navigate('/favorite')
+        setWidth(0); // 사이드 메뉴 숨기기
     }
 
     const goToLoginPage = ()=>{
         navigate('/login');
+        setWidth(0); // 사이드 메뉴 숨기기
     }
 
     const goToHomePage = ()=>{
         navigate('/')
+        setWidth(0); // 사이드 메뉴 숨기기
     }
 
     const search = (e)=>{
         let inputValue = e.target.value;
-
         if (e.key === 'Enter') {
             navigate(`/?q=${inputValue}`);
         }
@@ -37,9 +40,7 @@ const Navbar = ({authenticate, setAuthenticate}) => {
     let [width, setWidth] = useState(0);
     
     const hideSideMenu = (e) => {
-       
           setWidth(0); // 사이드 메뉴 숨기기
-        
       }
     
   return (
