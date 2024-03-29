@@ -10,7 +10,6 @@ const ProductAll = () => {
     let response = await fetch(url);
     let data = await response.json();
     setProductList(data);
-    console.log("ddd", data);
   }
 
   useEffect(()=>{
@@ -21,7 +20,7 @@ const ProductAll = () => {
     <div className='bodyContainer'>
       <div className='productCardsWrap'>
         {productList.map((item)=> (
-          <ProductCard item={item}/>
+          <ProductCard key={item.id} item={item}/>
         ))}
       </div>
     </div>

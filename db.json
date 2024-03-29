@@ -8,7 +8,7 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -19,7 +19,7 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -30,7 +30,7 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -41,7 +41,7 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -52,7 +52,7 @@
             "choice":true,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -63,7 +63,7 @@
             "choice":false,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -74,7 +74,7 @@
             "choice":true,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -85,7 +85,7 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -96,7 +96,7 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -107,7 +107,7 @@
             "choice":false,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -118,7 +118,7 @@
             "choice":true,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -129,7 +129,7 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -140,7 +140,7 @@
             "choice":true,
             "new":true,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         },
         {
@@ -151,7 +151,7 @@
             "choice":false,
             "new":false,
             "size":["S","M","L"],
-            "isLiked":false
+            "isLiked":""
 
         }
     ]

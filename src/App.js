@@ -6,6 +6,7 @@ import Navbar from './component/Navbar';
 import { useEffect, useState } from 'react';
 import PrivateRoute from './route/PrivateRoute';
 import Signup from './page/Signup';
+import Cart from './page/Cart';
 
 //1. 전체상품, 로그인, 상품 상세 페이지
 //2. 전체 상품 페이지에서는 전체 상품을 볼 수 있다.
@@ -29,6 +30,7 @@ function App() {
       <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate}/>
       <Routes>
         <Route path="/" element={<ProductAll/>}/>
+        <Route path="/favorite/:id" element={<Cart/>}/>
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate}/>}/>
         <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate}/>}/>
         <Route path="/signup" element={<Signup/>}/>

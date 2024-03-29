@@ -6,11 +6,14 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = ({authenticate, setAuthenticate}) => {
     const menuList = ["Ballet","Outer","Top","Bottom","Event"]
     const navigate = useNavigate();
-    console.log(authenticate);
 
     const logout = ()=>{
         navigate('/')
         setAuthenticate(false);
+    }
+
+    const goToLikePage = ()=>{
+        navigate('/favorite/:id')
     }
 
     const goToLoginPage = ()=>{
@@ -32,7 +35,7 @@ const Navbar = ({authenticate, setAuthenticate}) => {
                 <div className='login-button' onClick={authenticate? logout : goToLoginPage}>{authenticate ? 'Logout' : 'Login'}</div>
                 <div className='login-button'>About us</div>
                 <div className='login-button'>My Page</div>
-                <div className='login-button'>Cart</div>
+                <div className='login-button' onClick={authenticate? goToLikePage : goToLoginPage}>Cart</div>
             </div>
         </div>
         <div className='titleWrap'>

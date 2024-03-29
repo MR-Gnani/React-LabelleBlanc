@@ -8,12 +8,7 @@ const Signup = () => {
 
     const navigate = useNavigate();
     const signUpUser = (e)=>{
-
-
         e.preventDefault();
-
-
-
         navigate("/login");
     }
 
