@@ -23,19 +23,28 @@ const Navbar = ({authenticate, setAuthenticate}) => {
     const goToHomePage = ()=>{
         navigate('/')
     }
+
+    const search = (e)=>{
+        let inputValue = e.target.value;
+
+        if (e.key === 'Enter') {
+            navigate(`/?q=${inputValue}`);
+        }
+    }
     
   return (
     <div>
         <div className='topWrap'>
             <div className='searchInput'>
-                <input type='text' placeholder='검색어 입력'/>
-                <FontAwesomeIcon icon={faSearch}/>
+                <input type='text' onKeyUp={(e)=> search(e)} placeholder='검색어 입력'/>
+                <button className='searchBtn'>search</button>
             </div>
             <div className='buttonArea'>
                 <div className='login-button' onClick={authenticate? logout : goToLoginPage}>{authenticate ? 'Logout' : 'Login'}</div>
                 <div className='login-button'>About us</div>
                 <div className='login-button'>My Page</div>
-                <div className='login-button' onClick={authenticate? goToLikePage : goToLoginPage}>Cart</div>
+                <div className='login-button'>Cart</div>
+                <div className='login-button' onClick={authenticate? goToLikePage : goToLoginPage}>Like</div>
             </div>
         </div>
         <div className='titleWrap'>
