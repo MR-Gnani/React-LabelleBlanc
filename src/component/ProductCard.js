@@ -40,7 +40,6 @@ const ProductCard = ({item}) => {
                 <div className='itemTitle'>{item?.title}</div>
                 <div>{item?.new === true ? "New":""}</div>
             </div>
-            <div>{item?.choice === true ? "Conscious Choice" : ""}</div>
             <div>₩{item?.price}</div>
         </div>
     </div>

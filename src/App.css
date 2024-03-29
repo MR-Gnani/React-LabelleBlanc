@@ -12,6 +12,26 @@
   font-style: normal;
 }
 
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: white;
+  font-weight: 1000;
+  background-color: rgba(80, 52, 31, 0.74);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1em;
+  z-index:2
+}
+
+.flex {
+  display: flex;
+}
+
 .mainPage {
   font-family: "Parisienne", cursive;
   background-color: #f0eade;
@@ -29,6 +49,10 @@
   justify-content: right;
   padding: 1em;
   cursor: pointer;
+}
+
+.showHide {
+  display: none;
 }
 
 .searchInput {
@@ -66,6 +90,7 @@
 .buttonArea {
   display: flex;
 }
+
 
 .titleWrap {
   display: flex;
@@ -320,6 +345,66 @@
 /* 미디어 쿼리를 사용하여 모바일 장치에 대한 스타일을 설정합니다. */
 @media only screen and (max-width: 768px) {
   /* 768px보다 작은 너비를 가진 장치에 대한 스타일을 여기에 추가합니다. */
+  .logoTitle {
+    font-size: 40px;
+    padding-left: 1em;
+    color: rgb(45, 29, 18);
+    padding-bottom: 1em;
+  }
+
+  .closeBtn {
+    text-align: right;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    cursor: pointer;
+  }
+
+  .unVisible{
+    padding-top: 3em;
+    padding-bottom: 2em;
+    font-size: 30px;
+    padding-left: 1em;
+    color: rgb(243, 174, 128);
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuList li:hover{
+    color: black;
+  }
+
+  .login-button {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+
+  .login-button:hover{
+    color: black;
+  }
+
+  .topWrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .showHide {
+    display: inline;
+    width: 20%;
+    cursor: pointer;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+
+  .buttonArea {
+    display: none;
+  }
 
   .loginBox {
     width: 300px;
@@ -356,6 +441,22 @@
     right: 0.03em;
   }
 
+  .detailsWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detailImgWrap {
+    width: 80%;
+    aspect-ratio: 1 / 1.2;
+  }
+  
+  .detailInfoWrap {
+    text-align: left;
+    width: 80%;
+    margin-left: 0.1em;
+  }
+ 
 }
 
 /* 미디어 쿼리를 사용하여 태블릿 장치에 대한 스타일을 설정합니다. */
