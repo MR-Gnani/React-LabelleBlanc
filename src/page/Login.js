@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import nLogo from '../naver.png';
 import gLogo from '../github.png';
 import kLogo from '../kakao.png';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { authenticateActions } from '../redux/actions/authenticateActions';
 
 const Login = ({setAuthenticate}) => {
 
+  const [id, setId] = useState('')
+  const [password, setPassword] = useState('')
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const loginUser = (e)=>{
     e.preventDefault();
-    setAuthenticate(true);
+    dispatch(authenticateActions.login(id,password));
     navigate("/")
   };
 
@@ -23,8 +28,8 @@ const Login = ({setAuthenticate}) => {
       <div className='loginBox'>
         <h1>Login</h1>
         <form className='loginForm' onSubmit={(e)=>loginUser(e)}>
-          <input type="text" name="username" placeholder='Id' required/>
-          <input type="password" name="password" placeholder='password' required/>
+          <input type="text" name="username" placeholder='Id' required onChange={(e)=>setId(e.target.value)}/>
+          <input type="password" name="password" placeholder='password' required onChange={(e)=>setPassword(e.target.value)}/>
           <label for="remember-check">
             <input type="checkbox" id="remember-check"/> 아이디 저장하기
           </label>

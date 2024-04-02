@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
+import { productAction } from '../redux/actions/productActions';
 
 const ProductDetails = () => {
+  const dispatch = useDispatch();
+  const product = useSelector((state)=>state.product.selectedItem)
+
   // 파라미터 값 가져오기
   let{id} = useParams();
 
   // API 데이터 State에 담기
-  const[product, setProduct] = useState(null);
+  // const[product, setProduct] = useState(null);
 
   // 상품상세 API 가져오기
   const getProductDetail= async()=>{
-    let url = `https://my-json-server.typicode.com/MR-Gnani/React-LabelleBlanc/products/${id}`
-    let response = await fetch(url);
-    let data = await response.json();
-    setProduct(data);
+    dispatch(productAction.getProductDetail(id));
   }
 
   // API는 항상 useEffect

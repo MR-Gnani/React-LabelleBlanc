@@ -1,14 +1,17 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { authenticateActions } from '../redux/actions/authenticateActions';
 
-const Navbar = ({authenticate, setAuthenticate}) => {
-    const menuList = ["ballet","outer","top","bottom","event"]
+const Navbar = () => {
+    const menuList = ["ballet","outer","top","bottom","dress","acc"]
     const navigate = useNavigate();
+    const authenticate = useSelector((state)=>state.auth.authenticate);
+    const dispatch = useDispatch();
 
     const logout = ()=>{
         navigate('/')
-        setAuthenticate(false);
+        dispatch(authenticateActions.logout(authenticate))
         setWidth(0); // 사이드 메뉴 숨기기
     }
 

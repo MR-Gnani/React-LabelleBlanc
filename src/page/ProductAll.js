@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../component/ProductCard';
 import { useSearchParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { productAction } from '../redux/actions/productActions';
 
 const ProductAll = () => {
 
   const[query, setQuery] = useSearchParams();
-  const[productList, setProductList] = useState([]);
-  
-  const getProducts = async()=>{
+  const productList = useSelector((state)=>state.product.productList)
+  const dispatch = useDispatch();
+
+  const getProducts = ()=>{
     let searchQuery=query.get('q')||"";
-    console.log("쿼리", searchQuery);
-    let url = `https://my-json-server.typicode.com/MR-Gnani/React-LabelleBlanc/products?q=${searchQuery}`;
-    let response = await fetch(url);
-    let data = await response.json();
-    setProductList(data);
+    dispatch(productAction.getProducts(searchQuery))
   }
 
   useEffect(()=>{

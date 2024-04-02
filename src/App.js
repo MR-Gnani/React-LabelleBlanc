@@ -32,7 +32,7 @@ function App() {
         <Route path="/" element={<ProductAll/>}/>
         <Route path="/favorite" element={<Cart/>}/>
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate}/>}/>
-        <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate}/>}/>
+        <Route path="/product/:id" element={<PrivateRoute/>}/>
         <Route path="/signup" element={<Signup/>}/>
       </Routes>
     </div>
