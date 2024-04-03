@@ -1,8 +1,10 @@
-import { combineReducers } from "redux";
-import authenticateReducer from "./authenticateReducer";
-import reducer from "./reducer";
+// 여기도 필요 없는 듯?
 
-export default combineReducers({
-    auth : authenticateReducer,
-    product : reducer,
-});
+// import { combineReducers } from "redux";
+// import authenticateReducer from "./authenticateReducer";
+// import productSlice from "./productSlice";
+
+// export default combineReducers({
+//     auth : authenticateReducer,
+//     product : productSlice,
+// });
