@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import { productAction } from '../redux/actions/productActions';
+import { fetchProductsDetails } from '../redux/productSlice';
+
 
 const ProductDetails = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const ProductDetails = () => {
 
   // 상품상세 API 가져오기
   const getProductDetail= async()=>{
-    dispatch(productAction.getProductDetail(id));
+    dispatch(fetchProductsDetails(id));
   }
 
   // API는 항상 useEffect
