@@ -64,7 +64,8 @@ const productSlice = createSlice({
     }
 });
 
-export const productActions = productSlice.actions
+// 원래 prodcutActions.js라는 파일에서 dispatch하려고 만들었지만 이제는 export할 필요 없을듯?
+export const productActions = productSlice.actions 
 export default productSlice.reducer;
 
 // function reducer(state=initialState, action) {
