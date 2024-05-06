@@ -10,10 +10,21 @@
 - HTML/CSS
 - Media Query
 - React
+- Redux/Redux Toolkit
 
 # Advanced Feature
 - search 기능
+
 ![search](https://github.com/MR-Gnani/React-LabelleBlanc/blob/master/SearchMobile.png)
+
+- 찜 기능
+
+![like]()
+
+# 개선 사항
+- 디테일 페이지 옵션 선택, 금액 자동 계산
+- 장바구니 페이지 추가
+
 
 # Getting Started with Create React App
 
