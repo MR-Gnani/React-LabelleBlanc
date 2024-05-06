@@ -19,7 +19,7 @@
 
 - 찜 기능
 
-![like]()
+![like](https://github.com/MR-Gnani/React-LabelleBlanc/blob/master/likeMobile.png)
 
 # 개선 사항
 - 디테일 페이지 옵션 선택, 금액 자동 계산
