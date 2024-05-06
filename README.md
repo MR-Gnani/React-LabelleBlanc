@@ -1,5 +1,15 @@
 # Demo
-[deployed](https://labelleblanc.netlify.app/)
+[https://labelleblanc.netlify.app/](https://labelleblanc.netlify.app/)
+
+# 개발 목표
+- grid를 활용한 반응형 웹 사이트 제작
+- localstorage 사용하여 찜 기능 구현
+- 리덕스와 리덕스툴킷 상태관리 라이브러리를 활용하여 state값 관리
+
+# 사용 기술
+- HTML/CSS
+- Media Query
+- React
 
 # Getting Started with Create React App
 
